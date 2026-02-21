@@ -176,11 +176,11 @@ int main()
                 getchar();
 
                 printf("Enter new task description (max 150 chars): ");
-
                 fgets(string_task, 151, stdin);
                 string_task[strcspn(string_task, "\n")] = '\0';
 
                 ver_str(string_task);
+                
                 edit_task(todos, index, string_task);
                 break;
 
